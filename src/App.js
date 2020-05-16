@@ -1,22 +1,17 @@
 import React from 'react';
 import Router from './Router';
-import logo from './logo.svg';
-import { Link } from 'react-router-dom';
+import Herader from './header/Header'
+import Container from 'react-bootstrap/Container'
 
 function App() {
   return (
     <>
-      <nav className="navbar navbar-dark bg-dark">
-        <Link className="navbar-brand" to="/">
-          <img src={logo} width="30" height="30" alt="" />
-        </Link>
-      </nav>
+      <Herader />
 
-      <div className="container-fluid">
-
+      <Container>
         <Router />
+      </Container>
 
-      </div>
     </>
   );
 }
